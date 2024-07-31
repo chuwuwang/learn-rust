@@ -34,3 +34,21 @@ pub fn guess() {
     }
 
 }
+
+fn first_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
+    for (_i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..1];
+        }
+    }
+    return &s[..]
+}
+
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+
