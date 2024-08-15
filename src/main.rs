@@ -1,7 +1,6 @@
-use crate::book_pal::guessing_game::guess;
+extern crate connector;
 
 mod book_pal;
-
 mod communicator;
 
 fn main() {
@@ -13,5 +12,5 @@ fn main() {
     // rect1.area();
 
     communicator::client::connect();
-
+    connector::client::connect();
 }
