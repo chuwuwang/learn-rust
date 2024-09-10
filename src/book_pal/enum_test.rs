@@ -20,5 +20,4 @@ fn test() {
     } else {
         count += 1;
     }
-
 }

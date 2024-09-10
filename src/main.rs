@@ -13,4 +13,7 @@ fn main() {
 
     communicator::client::connect();
     connector::client::connect();
+
+    book_pal::strings_test::strings_test();
+    book_pal::map_test::map_test();
 }
