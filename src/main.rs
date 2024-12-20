@@ -16,4 +16,5 @@ fn main() {
 
     book_pal::strings_test::strings_test();
     book_pal::map_test::map_test();
+
 }
