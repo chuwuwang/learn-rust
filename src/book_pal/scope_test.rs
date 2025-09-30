@@ -1,5 +1,4 @@
 pub fn scope_test() {
-
     let s = String::from("Hello World");
 
     take_ownership(s);
@@ -9,7 +8,6 @@ pub fn scope_test() {
     makes_ownership(x);
 
     println!("x: {}", x);
-
 }
 
 fn take_ownership(some_string: String) {

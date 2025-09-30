@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 extern crate connector;
 
 mod book_pal;
@@ -18,5 +20,6 @@ fn main() {
     // book_pal::checked::checked::op(211.0, 10.0).unwrap();
     // arc_test::arc_test()
     // channel_test::channel_test()
-    file_test::file_test();
+    // file_test::file_test();
+    file_test::file_create_test();
 }
