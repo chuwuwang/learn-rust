@@ -10,3 +10,4 @@ pub mod scope_test;
 pub mod strings_test;
 pub mod channel_test;
 pub mod file_test;
+pub mod process_test;
