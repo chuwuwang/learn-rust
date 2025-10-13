@@ -9,6 +9,7 @@ use crate::book_pal::arc_test;
 use crate::book_pal::channel_test;
 use crate::book_pal::file_test;
 use crate::book_pal::process_test;
+use crate::book_pal::condvar_test;
 
 fn main() {
     // communicator::client::connect();
@@ -23,5 +24,6 @@ fn main() {
     // channel_test::channel_test()
     // file_test::file_test();
     // file_test::file_create_test();
-    process_test::process_test();
+    // process_test::process_test();
+    condvar_test::condvar_test()
 }
