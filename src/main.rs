@@ -20,10 +20,14 @@ fn main() {
     // book_pal::map_test::map_test();
     // book_pal::scope_test::scope_test();
     // book_pal::checked::checked::op(211.0, 10.0).unwrap();
-    // arc_test::arc_test()
-    // channel_test::channel_test()
+
     // file_test::file_test();
     // file_test::file_create_test();
     // process_test::process_test();
-    condvar_test::condvar_test()
+
+    // arc_test::arc_test()
+    arc_test::test_shared_counter()
+    // condvar_test::condvar_test()
+    // channel_test::channel_test()
+    // channel_test::channel_safe()
 }

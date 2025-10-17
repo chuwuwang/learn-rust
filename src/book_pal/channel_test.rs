@@ -20,3 +20,14 @@ pub fn channel_test() {
     }
     println!("Received ids: {:?}", ids);
 }
+
+pub fn channel_safe() {
+    let (tx, rx) = mpsc::channel();
+    thread::spawn(move || {
+        tx.send("Hello from thread").unwrap();
+        // 发送后tx所有权转移, 主线程无法再使用
+    } );
+    // 主线程接收消息, 阻塞等待, 接收到 "Hello from thread"
+    let msg = rx.recv().unwrap();
+    println!("{}", msg);
+}
