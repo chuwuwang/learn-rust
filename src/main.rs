@@ -5,7 +5,8 @@ extern crate connector;
 mod book_pal;
 mod communicator;
 
-use crate::book_pal::file_test;
+use std::future;
+use crate::book_pal::{file_test, reqwest_test };
 use crate::book_pal::process_test;
 
 use crate::book_pal::arc_test;
@@ -33,5 +34,8 @@ fn main() {
     // channel_test::channel_test()
     // channel_test::channel_safe()
     // rayon_test::rayon_test()
-    rayon_test::rayon_test2()
+    // rayon_test::rayon_test2()
+
+    let future = reqwest_test::request_test();
+
 }
