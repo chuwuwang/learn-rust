@@ -17,3 +17,4 @@ pub mod channel_test;
 pub mod condvar_test;
 
 pub mod reqwest_test;
+mod tokio_test;
