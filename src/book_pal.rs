@@ -13,8 +13,8 @@ pub mod process_test;
 
 pub mod arc_test;
 pub mod rayon_test;
+pub mod tokio_test;
+pub mod thread_test;
 pub mod channel_test;
-pub mod condvar_test;
-
 pub mod reqwest_test;
-mod tokio_test;
+pub mod condvar_test;

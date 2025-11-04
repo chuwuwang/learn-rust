@@ -6,7 +6,7 @@ mod book_pal;
 mod communicator;
 
 use std::future;
-use crate::book_pal::{file_test, reqwest_test };
+use crate::book_pal::{file_test, reqwest_test, tokio_test };
 use crate::book_pal::process_test;
 
 use crate::book_pal::arc_test;
@@ -36,6 +36,6 @@ fn main() {
     // rayon_test::rayon_test()
     // rayon_test::rayon_test2()
 
-    let future = reqwest_test::request_test();
-
+    // let future = reqwest_test::request_test();
+    tokio_test::async_tokio_test();
 }
