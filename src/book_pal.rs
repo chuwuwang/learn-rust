@@ -1,5 +1,6 @@
 pub mod coin;
 pub mod queue;
+pub mod fibonacci;
 pub mod rectangles;
 
 pub mod checked;
