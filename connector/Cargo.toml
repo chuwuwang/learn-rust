@@ -4,3 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+tower-http = { version = "0.6.6", features = [
+    "trace",                        # 启用追踪
+    "compression-gzip",             # 启用 Gzip 压缩
+    "cors",                         # 启用 CORS
+    "full"                          # 或者启用全部（不推荐生产环境，增加大小）
+] }
+tower = { version = "0.4", features = ["util"] }      # Tower 核心
+http = "1.0"                   # HTTP 类型
+http-body-util = "0.1"         # Body 处理
+bytes = "1.0"                  # 字节缓冲
+tokio = { version = "1", features = ["full"] } # 异步运行时
+tracing = "0.1"                # 日志追踪（可选）

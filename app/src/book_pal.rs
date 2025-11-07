@@ -1,5 +1,6 @@
 pub mod coin;
 pub mod queue;
+pub mod heap_vec;
 pub mod fibonacci;
 pub mod rectangles;
 

@@ -3,7 +3,7 @@ use std::io::{Read, Write};
 use std::path::Path;
 
 pub fn file_test() {
-    let path = Path::new("hello.txt");
+    let path = Path::new("../../hello.txt");
     let display = path.display();
     println!("display: {:?}", display);
 
@@ -20,7 +20,7 @@ pub fn file_test() {
 static LOREM_IPSUM: &'static str ="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 pub fn file_create_test() {
-    let path = Path::new("rust.txt");
+    let path = Path::new("../../rust.txt");
     let display = path.display();
 
     let mut file = match File::create(&path) {

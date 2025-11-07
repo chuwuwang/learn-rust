@@ -6,9 +6,10 @@ mod book_pal;
 mod communicator;
 
 use std::future;
+use tokio::runtime;
+use tokio::runtime::Runtime;
 use crate::book_pal::{file_test, reqwest_test, tokio_test };
 use crate::book_pal::process_test;
-
 use crate::book_pal::arc_test;
 use crate::book_pal::channel_test;
 use crate::book_pal::condvar_test;
@@ -17,6 +18,8 @@ use crate::book_pal::{ rayon_test };
 fn main() {
     // communicator::client::connect();
     // connector::client::connect();
+    let result = Runtime::new().unwrap().block_on( connector::test_server() );
+    println!("{:?}", result);
 
     // guess();
     // book_pal::strings_test::strings_test();
@@ -37,5 +40,5 @@ fn main() {
     // rayon_test::rayon_test2()
 
     // let future = reqwest_test::request_test();
-    tokio_test::async_tokio_test();
+    // tokio_test::async_tokio_test();
 }
