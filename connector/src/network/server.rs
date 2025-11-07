@@ -41,15 +41,3 @@ impl <T, const N: usize> HeapVec<T, N> {
     }
 
 }
-
-impl<T, const N: usize> Drop for HeapVec<T, N> {
-
-    // type Target = [T];
-
-    fn drop(&mut self) -> &[T] {
-        unsafe {
-            std::slice::from_raw_parts(self.data.as_ptr() as *const T, self.len)
-        }
-    }
-
-}
