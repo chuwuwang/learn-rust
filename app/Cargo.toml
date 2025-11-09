@@ -7,6 +7,8 @@ edition = "2021"
 num = "0.4.3"
 rand = "0.9.2"
 rayon = "1.7"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["local-time"] }  # 用于配置输出
 
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.145"
