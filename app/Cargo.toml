@@ -12,10 +12,11 @@ tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["local-time"] }  # 用于配置输出
 
 serde = { version = "1.0.228", features = ["derive"] }
-serde_json = "1.0.145"
+serde_json = "1.0"
 serde_yaml = "0.9"
 toml = "0.7"         # for toml serialization/deserialization
 bincode = "2.0.1"               # simple binary format
+chrono = { version = "0.4", features = ["serde"] } # 时间示例使用
 
 reqwest = { version = "0.12", features = ["json", "multipart"] }
 tokio = { version = "1", features = ["full"] }  # 用于异步

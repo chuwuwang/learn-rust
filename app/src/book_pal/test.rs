@@ -1,9 +1,11 @@
-use crate::book_pal::{reqwest_test, tokio_test, anyhow_test};
+use crate::book_pal::{reqwest_test, tokio_test, anyhow_test, user};
 use tokio::runtime::Runtime;
 
 pub fn test_book_pal() {
     let result = Runtime::new().unwrap().block_on(connector::test_server());
     println!("{:?}", result);
+
+    user::json_test();
 
     // guess();
     // book_pal::strings_test::strings_test();

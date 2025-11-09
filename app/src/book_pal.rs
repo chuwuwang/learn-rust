@@ -1,26 +1,27 @@
 pub mod test;
 
-pub mod coin;
-pub mod queue;
-pub mod heap_vec;
-pub mod fibonacci;
-pub mod rectangles;
+mod user;
+mod coin;
+mod queue;
+mod heap_vec;
+mod fibonacci;
+mod rectangles;
 
-pub mod checked;
-pub mod guessing_game;
+mod checked;
+mod guessing_game;
 
-pub mod map_test;
-pub mod file_test;
-pub mod scope_test;
-pub mod strings_test;
-pub mod process_test;
+mod map_test;
+mod file_test;
+mod scope_test;
+mod strings_test;
+mod process_test;
 
-pub mod arc_test;
-pub mod rayon_test;
-pub mod tokio_test;
-pub mod thread_test;
-pub mod channel_test;
-pub mod reqwest_test;
-pub mod condvar_test;
+mod arc_test;
+mod rayon_test;
+mod tokio_test;
+mod thread_test;
+mod channel_test;
+mod reqwest_test;
+mod condvar_test;
 
-pub mod anyhow_test;
+mod anyhow_test;
