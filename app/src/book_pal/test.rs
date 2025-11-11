@@ -27,6 +27,7 @@ pub fn test_book_pal() {
 
     // let future = reqwest_test::request_test();
     tokio_test::async_tokio_test();
+    tokio_test::tokio_cancel();
 
     let future = anyhow_test::anyhow_test();
 }
