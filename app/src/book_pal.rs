@@ -12,6 +12,7 @@ mod guessing_game;
 
 mod map_test;
 mod file_test;
+mod iter_test;
 mod scope_test;
 mod strings_test;
 mod process_test;

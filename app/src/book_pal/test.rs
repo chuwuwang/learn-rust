@@ -1,4 +1,4 @@
-use crate::book_pal::{reqwest_test, tokio_test, anyhow_test, user};
+use crate::book_pal::{reqwest_test, tokio_test, anyhow_test, user, iter_test};
 use tokio::runtime::Runtime;
 
 pub fn test_book_pal() {
@@ -16,6 +16,7 @@ pub fn test_book_pal() {
     // file_test::file_test();
     // file_test::file_create_test();
     // process_test::process_test();
+    iter_test::iter_test();
 
     // arc_test::arc_test()
     // arc_test::test_shared_counter()
