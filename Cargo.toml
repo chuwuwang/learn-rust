@@ -2,6 +2,6 @@
 
 members = [
     "app",
-    "connector",
-    "restaurant",
+    "tcp-client",
+    "tcp-server",
 ]

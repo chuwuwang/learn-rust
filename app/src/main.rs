@@ -1,6 +1,4 @@
 #![allow(dead_code)]
-extern crate connector;
-
 mod book_pal;
 mod communicator;
 

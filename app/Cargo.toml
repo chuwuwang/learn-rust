@@ -4,8 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-connector = { path = "../connector" }
-restaurant = { path = "../restaurant" }
+# restaurant = { path = "../restaurant" }
 
 num = "0.4.3"
 rand = "0.9.2"
