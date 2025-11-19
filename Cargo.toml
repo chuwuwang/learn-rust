@@ -2,6 +2,8 @@
 
 members = [
     "app",
+    "http",
+    "http-server",
     "tcp-client",
     "tcp-server",
 ]
