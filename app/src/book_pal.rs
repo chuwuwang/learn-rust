@@ -26,3 +26,4 @@ mod reqwest_test;
 mod condvar_test;
 
 mod anyhow_test;
+mod thiserror_test;
