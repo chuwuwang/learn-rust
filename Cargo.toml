@@ -1,7 +1,7 @@
 [workspace]
 
 members = [
-    "app",
+    "book-learn",
     "http",
     "http-server",
     "tcp-client",
