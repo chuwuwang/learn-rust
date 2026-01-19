@@ -1,4 +1,4 @@
-use crate::book_pal::{reqwest_test, tokio_test, anyhow_test, user, iter_test, thiserror_test};
+use crate::book_pal::{reqwest_test, tokio_test, anyhow_test, user, iter_test, thiserror_test, app_todo};
 use tokio::runtime::Runtime;
 
 pub fn test_book_pal() {
@@ -29,4 +29,6 @@ pub fn test_book_pal() {
 
     let future = anyhow_test::anyhow_test();
     thiserror_test::thiserror_test();
+
+    app_todo::todo_app_example();
 }
