@@ -11,7 +11,7 @@ const CONCURRENCY: usize = 8;
 const CHUNK_SIZE: u64 = 1024 * 512;
 
 #[tokio::main]
-pub async fn download() -> Result<(), Box<dyn std::error::Error>> {
+pub async fn download() -> Result< (), Box<dyn std::error::Error> > {
     let url = "https://releases.ubuntu.com/22.04/ubuntu-22.04.5-desktop-amd64.iso.zsync";
     let file_path = "downloaded_file.zsync";
     let client = reqwest::Client::new();
