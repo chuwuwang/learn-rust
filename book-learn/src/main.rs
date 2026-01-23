@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 mod book_pal;
-mod communicator;
+mod core_network;
 mod feature_hardware;
 
 use crate::book_pal::test;
@@ -11,9 +11,9 @@ use tracing_subscriber::fmt;
 fn main() {
     init_logging();
 
-    feature_hardware::main::hardware();
+    core_network::main::main();
 
-    communicator::main::main();
+    feature_hardware::main::main();
 
     test::test_book_pal();
 }
