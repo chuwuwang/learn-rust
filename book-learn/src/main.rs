@@ -13,6 +13,8 @@ fn main() {
 
     feature_hardware::main::hardware();
 
+    communicator::main::main();
+
     test::test_book_pal();
 }
 

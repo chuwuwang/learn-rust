@@ -31,5 +31,8 @@ regex = "1.12"
 # 获取系统硬件、操作系统、进程等相关信息
 sys-info = "0.9.1"
 
+# 下载进度条
+indicatif = "0.18"
+
 [build-dependencies]
 prost-build = "0.14.1"
