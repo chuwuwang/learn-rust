@@ -1,5 +1,3 @@
-pub mod test;
-
 mod user;
 mod coin;
 mod queue;
@@ -10,12 +8,18 @@ mod rectangles;
 mod checked;
 mod guessing_game;
 
+mod swap_demo;
+mod replace_demo;
+
 mod map_test;
 mod file_test;
 mod iter_test;
 mod scope_test;
 mod strings_test;
 mod process_test;
+
+mod anyhow_test;
+mod thiserror_test;
 
 mod arc_test;
 mod rayon_test;
@@ -25,7 +29,6 @@ mod channel_test;
 mod reqwest_test;
 mod condvar_test;
 
-mod anyhow_test;
-mod thiserror_test;
-
 mod app_todo;
+
+pub mod main;

@@ -3,7 +3,7 @@ mod book_pal;
 mod core_network;
 mod feature_hardware;
 
-use crate::book_pal::test;
+use crate::book_pal::main;
 
 use tracing::info;
 use tracing_subscriber::fmt;
@@ -15,7 +15,7 @@ fn main() {
 
     feature_hardware::main::main();
 
-    test::test_book_pal();
+    main::test_book_pal();
 }
 
 fn init_logging() {
