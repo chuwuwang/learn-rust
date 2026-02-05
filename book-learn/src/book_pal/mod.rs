@@ -8,6 +8,7 @@ mod rectangles;
 mod checked;
 mod guessing_game;
 
+mod cow_test;
 mod swap_demo;
 mod replace_demo;
 
